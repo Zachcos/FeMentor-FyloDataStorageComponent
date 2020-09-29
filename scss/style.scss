@@ -40,6 +40,7 @@ body {
   height: 190px;
   margin-top: -20px;
   width: 100%;
+  min-width: 864px;
 }
 
 .component__actions {
@@ -66,8 +67,58 @@ body {
 }
 
 .component__storage {
+  background: $darkBlue;
   border-radius: 9px;
-  border: 1px solid pink;
   grid-area: storage;
-  // width: 60%;
+  padding: 0 8%;
+  &--info {
+    @include font_reg;
+    color: hsl(255, 100%, 100%);
+    margin-top: 40px;
+    opacity: 0.8;
+    .emphasis {
+      @include font_bold;
+    }
+  }
+  &__bar {
+    &__container {
+      background: lighten($veryDarkBlue, 6%);
+      border-radius: 10px;
+      display: flex;
+      height: 18px;
+      margin-top: 15px;
+      width: 100%;
+      align-items: center;
+    }
+    &__fill {
+      @include gradient;
+      border-radius: 10px;
+      margin-left: 3px;
+      height: 12px;
+      position: relative;
+      width: 81.5%;
+      &:after {
+        background: hsl(255, 100%, 100%);
+        border-radius: 50%;
+        content: " ";
+        display: inline-block;
+        height: 9px;
+        left: 96.75%;
+        position: relative;
+        width: 9px;
+      }
+    }
+  }
+  &--label {
+    @include font_bold;
+    opacity: 0.75;
+    display: inline-block;
+    font-size: 0.7rem;
+    color: hsl(255, 100%, 100%);
+    margin-top: 8px;
+    &:last-child {
+      position: relative;
+      left: 83%;
+    }
+  }
 }

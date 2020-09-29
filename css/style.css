@@ -156,6 +156,7 @@ body {
   height: 190px;
   margin-top: -20px;
   width: 100%;
+  min-width: 864px;
 }
 
 .component__actions {
@@ -182,9 +183,61 @@ body {
 }
 
 .component__storage {
+  background: #1d2c67;
   border-radius: 9px;
-  border: 1px solid pink;
   grid-area: storage;
+  padding: 0 8%;
+}
+.component__storage--info {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-top: 40px;
+  opacity: 0.8;
+}
+.component__storage--info .emphasis {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.component__storage__bar__container {
+  background: #131c44;
+  border-radius: 10px;
+  display: flex;
+  height: 18px;
+  margin-top: 15px;
+  width: 100%;
+  align-items: center;
+}
+.component__storage__bar__fill {
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 10px;
+  margin-left: 3px;
+  height: 12px;
+  position: relative;
+  width: 81.5%;
+}
+.component__storage__bar__fill:after {
+  background: white;
+  border-radius: 50%;
+  content: " ";
+  display: inline-block;
+  height: 9px;
+  left: 96.75%;
+  position: relative;
+  width: 9px;
+}
+.component__storage--label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  opacity: 0.75;
+  display: inline-block;
+  font-size: 0.7rem;
+  color: white;
+  margin-top: 8px;
+}
+.component__storage--label:last-child {
+  position: relative;
+  left: 83%;
 }
 
 /*# sourceMappingURL=style.css.map */
