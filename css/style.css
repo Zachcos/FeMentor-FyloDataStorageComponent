@@ -149,14 +149,17 @@ body {
 }
 
 .component__wrapper {
+  display: flex;
+  max-height: 191px;
   width: 100%;
 }
 
 .component__actions {
   background: #1d2c67;
   border-radius: 9px 90px 9px 9px;
-  padding: 35px 45px 15px;
-  width: 38%;
+  margin-right: 3%;
+  padding: 38px 45px 15px;
+  width: 37%;
 }
 .component__actions__icons {
   display: flex;
@@ -172,6 +175,12 @@ body {
   height: 45px;
   justify-content: center;
   width: 45px;
+}
+
+.component__storage {
+  border-radius: 9px;
+  border: 1px solid pink;
+  width: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

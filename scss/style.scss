@@ -31,14 +31,17 @@ body {
 }
 
 .component__wrapper {
+  display: flex;
+  max-height: 191px;
   width: 100%;
 }
 
 .component__actions {
   background: $darkBlue;
   border-radius: 9px 90px 9px 9px;
-  padding: 35px 45px 15px;
-  width: 38%;
+  margin-right: 3%;
+  padding: 38px 45px 15px;
+  width: 37%;
   &__icons {
     display: flex;
     justify-content: space-between;
@@ -54,4 +57,10 @@ body {
       width: 45px;
     }
   }
+}
+
+.component__storage {
+  border-radius: 9px;
+  border: 1px solid pink;
+  width: 60%;
 }
