@@ -163,7 +163,6 @@ body {
   background: #1d2c67;
   border-radius: 9px 90px 9px 9px;
   grid-area: actions;
-  margin-right: 3%;
   padding: 38px 45px 15px;
 }
 .component__actions__icons {
@@ -279,6 +278,44 @@ body {
 .component__storage--label:last-child {
   left: 83%;
   position: relative;
+}
+
+@media screen and (max-width: 864px) {
+  body {
+    padding: 0 8%;
+  }
+
+  .component__wrapper {
+    height: auto;
+    margin-top: 0;
+    grid-template-rows: 200px 15px 160px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "actions" "gutter" "storage";
+    min-width: 80%;
+  }
+
+  .component__storage--info {
+    text-align: center;
+  }
+  .component__storage--label:last-child {
+    left: 77%;
+  }
+  .component__storage__remaining {
+    right: 22%;
+    top: 82%;
+  }
+  .component__storage__remaining:after {
+    visibility: hidden;
+  }
+  .component__storage__bar__fill:after {
+    left: 95.75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background: #0c122c url("../images/bg-mobile.png") no-repeat bottom left;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
