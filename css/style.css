@@ -149,17 +149,21 @@ body {
 }
 
 .component__wrapper {
-  display: flex;
-  max-height: 191px;
+  display: grid;
+  grid-template-rows: 20fr 80fr;
+  grid-template-columns: 39fr 2fr 59fr;
+  grid-template-areas: "actions gutter buffer" "actions gutter storage";
+  height: 190px;
+  margin-top: -20px;
   width: 100%;
 }
 
 .component__actions {
   background: #1d2c67;
   border-radius: 9px 90px 9px 9px;
+  grid-area: actions;
   margin-right: 3%;
   padding: 38px 45px 15px;
-  width: 37%;
 }
 .component__actions__icons {
   display: flex;
@@ -180,7 +184,7 @@ body {
 .component__storage {
   border-radius: 9px;
   border: 1px solid pink;
-  width: 60%;
+  grid-area: storage;
 }
 
 /*# sourceMappingURL=style.css.map */
