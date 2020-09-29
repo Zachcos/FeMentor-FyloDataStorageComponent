@@ -186,8 +186,9 @@ body {
       left: 77%;
     }
     &__remaining {
-      right: 22%;
+      right: 50%;
       top: 82%;
+      transform: translateX(50%);
       &:after {
         visibility: hidden;
       }

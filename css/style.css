@@ -301,8 +301,9 @@ body {
     left: 77%;
   }
   .component__storage__remaining {
-    right: 22%;
+    right: 50%;
     top: 82%;
+    transform: translateX(50%);
   }
   .component__storage__remaining:after {
     visibility: hidden;
