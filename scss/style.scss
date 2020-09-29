@@ -17,3 +17,41 @@ $veryDarkBlue: hsl(229, 57%, 11%);
   font-weight: 700;
 }
 /* End variables and mixins */
+
+body {
+  align-items: center;
+  background: $veryDarkBlue url("../images/bg-desktop.png") no-repeat bottom
+    left;
+  display: flex;
+  font-size: 14px;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 20%;
+  width: 100%;
+}
+
+.component__wrapper {
+  width: 100%;
+}
+
+.component__actions {
+  background: $darkBlue;
+  border-radius: 9px 90px 9px 9px;
+  padding: 35px 45px 15px;
+  width: 38%;
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 70%;
+    .icon {
+      align-items: center;
+      background: $veryDarkBlue;
+      border-radius: 8px;
+      display: flex;
+      height: 45px;
+      justify-content: center;
+      width: 45px;
+    }
+  }
+}
